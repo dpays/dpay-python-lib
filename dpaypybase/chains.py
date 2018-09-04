@@ -1,6 +1,6 @@
 known_chains = {
     "DPAY": {
-        "chain_id": "782a3039b478c839e4cb0c941ff4eaeb7df40bdd68bd441afd444b9da763de12",
+        "chain_id": "38f14b346eb697ba04ae0f5adcfaa0a437ed3711197704aa256a14cb9b4a8f26",
         "prefix": "DWB",
         "dpay_symbol": "BEX",
         "bbd_symbol": "BBD",

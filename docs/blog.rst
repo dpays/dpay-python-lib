@@ -6,10 +6,10 @@ Read a users Blog
 
 .. code-block:: python
 
-   from piston.blog import Blog
-   print(Blog("xeroc"))
+   from dpaypy.blog import Blog
+   print(Blog("jared"))
 
-This returns a list of :class:`steem.post.Post`.
+This returns a list of :class:`dpay.post.Post`.
 
-.. autoclass:: piston.blog.Blog
+.. autoclass:: dpaypy.blog.Blog
    :members:

@@ -1,6 +1,6 @@
-from pistonbase import transactions
+from dpaypybase import transactions
 from graphenebase.account import PrivateKey, PublicKey, Address
-from pistonbase import memo as Memo
+from dpaypybase import memo as Memo
 import random
 import unittest
 

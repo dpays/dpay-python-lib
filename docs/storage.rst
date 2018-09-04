@@ -1,14 +1,14 @@
 Storage
 ~~~~~~~~~
 
-.. autoclass:: piston.storage.DataDir
+.. autoclass:: dpaypy.storage.DataDir
    :members:
 
-.. autoclass:: piston.storage.Key
+.. autoclass:: dpaypy.storage.Key
    :members:
 
-.. autoclass:: piston.storage.Configuration
+.. autoclass:: dpaypy.storage.Configuration
    :members:
 
-.. autoclass:: piston.storage.MasterPassword
+.. autoclass:: dpaypy.storage.MasterPassword
    :members:

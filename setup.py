@@ -9,21 +9,21 @@ except LookupError:
     ascii = codecs.lookup('ascii')
     codecs.register(lambda name, enc=ascii: {True: enc}.get(name == 'mbcs'))
 
-VERSION = '0.5.7'
+VERSION = '0.1.1'
 
 setup(
-    name='piston-lib',
+    name='dpay-lib',
     version=VERSION,
-    description='Python library for STEEM',
+    description='Python library for dPay',
     long_description=open('README.md').read(),
-    download_url='https://github.com/xeroc/piston-lib/tarball/' + VERSION,
-    author='Fabian Schuh',
-    author_email='Fabian@chainsquad.com',
-    maintainer='Fabian Schuh',
-    maintainer_email='Fabian@chainsquad.com',
-    url='http://lib.piston.rocks',
-    keywords=['steem', 'library', 'api', 'rpc', 'transactions'],
-    packages=["piston", "pistonapi", "pistonbase"],
+    download_url='https://github.com/dpays/dpay-python-lib/tarball/' + VERSION,
+    author='Jared Rice Sr.',
+    author_email='jared@benchx.io',
+    maintainer='Jared Rice Sr.',
+    maintainer_email='jared@benchx.io',
+    url='http://docs.dpays.io',
+    keywords=['dpay', 'library', 'api', 'rpc', 'transactions'],
+    packages=["dpaypy", "dpaypyapi", "dpaypybase"],
     classifiers=[
         'License :: OSI Approved :: MIT License',
         'Operating System :: OS Independent',

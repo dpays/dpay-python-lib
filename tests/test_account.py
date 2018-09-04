@@ -1,7 +1,7 @@
 import unittest
-from piston.account import Account
+from dpaypy.account import Account
 
-testaccount = "xeroc"
+testaccount = "jared"
 
 
 class Testcases(unittest.TestCase):

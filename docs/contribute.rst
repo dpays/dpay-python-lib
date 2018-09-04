@@ -1,4 +1,4 @@
-Contributing to piston-lib 
+Contributing to dpay-lib 
 ==========================
 
 We welcome your contributions to our project.
@@ -19,7 +19,7 @@ How to Contribute
 1. Fork or branch from the master.
 2. Create commits following the commit style
 3. Start a pull request to the master branch
-4. Wait for a @xeroc or another member to review
+4. Wait for a @jared or another member to review
 
 Issues
 ------

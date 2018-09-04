@@ -1,9 +1,9 @@
 import unittest
 from binascii import hexlify
 from pprint import pprint
-from pistonbase.account import PrivateKey
-from pistonbase.transactions import Signed_Transaction
-from pistonbase import operations
+from dpaypybase.account import PrivateKey
+from dpaypybase.transactions import Signed_Transaction
+from dpaypybase import operations
 from collections import OrderedDict
 
 wif = "5KQwrPbwdL6PhXujxW37FSSQZ1JiwsST4cqQzDeyXtP79zkvFD3"
@@ -73,29 +73,29 @@ class Testcases(unittest.TestCase):
 
     def test_create_account(self):
         op = operations.Account_create(
-            **{'creator': 'xeroc',
-               'fee': '10.000 STEEM',
+            **{'creator': 'jared',
+               'fee': '10.000 BEX',
                'json_metadata': '',
-               'memo_key': 'STM6zLNtyFVToBsBZDsgMhgjpwysYVbsQD6YhP3kRkQhANUB4w7Qp',
+               'memo_key': 'DWB6zLNtyFVToBsBZDsgMhgjpwysYVbsQD6YhP3kRkQhANUB4w7Qp',
                'new_account_name': 'fsafaasf',
                'owner': {'account_auths': [],
-                         'key_auths': [['STM5jYVokmZHdEpwo5oCG3ES2Ca4VYzy6tM8pWWkGdgVnwo2mFLFq',
+                         'key_auths': [['DWB5jYVokmZHdEpwo5oCG3ES2Ca4VYzy6tM8pWWkGdgVnwo2mFLFq',
                                         1], [
-                                       'STM6zLNtyFVToBsBZDsgMhgjpwysYVbsQD6YhP3kRkQhANUB4w7Qp',
+                                       'DWB6zLNtyFVToBsBZDsgMhgjpwysYVbsQD6YhP3kRkQhANUB4w7Qp',
                                        1]],
                          'weight_threshold': 1},
                'active': {'account_auths': [],
-                          'key_auths': [['STM6pbVDAjRFiw6fkiKYCrkz7PFeL7XNAfefrsREwg8MKpJ9VYV9x',
+                          'key_auths': [['DWB6pbVDAjRFiw6fkiKYCrkz7PFeL7XNAfefrsREwg8MKpJ9VYV9x',
                                          1], [
-                                        'STM6zLNtyFVToBsBZDsgMhgjpwysYVbsQD6YhP3kRkQhANUB4w7Qp',
+                                        'DWB6zLNtyFVToBsBZDsgMhgjpwysYVbsQD6YhP3kRkQhANUB4w7Qp',
                                         1]],
                           'weight_threshold': 1},
                'posting': {'account_auths': [],
-                           'key_auths': [['STM8CemMDjdUWSV5wKotEimhK6c4dY7p2PdzC2qM1HpAP8aLtZfE7',
+                           'key_auths': [['DWB8CemMDjdUWSV5wKotEimhK6c4dY7p2PdzC2qM1HpAP8aLtZfE7',
                                           1], [
-                                         'STM6zLNtyFVToBsBZDsgMhgjpwysYVbsQD6YhP3kRkQhANUB4w7Qp',
+                                         'DWB6zLNtyFVToBsBZDsgMhgjpwysYVbsQD6YhP3kRkQhANUB4w7Qp',
                                          1], [
-                                         'STM6pbVDAjRFiw6fkiKYCrkz7PFeL7XNAfefrsREwg8MKpJ9VYV9x',
+                                         'DWB6pbVDAjRFiw6fkiKYCrkz7PFeL7XNAfefrsREwg8MKpJ9VYV9x',
                                          1
                                          ]],
                            'weight_threshold': 1}}
@@ -132,7 +132,7 @@ class Testcases(unittest.TestCase):
         op = operations.Transfer(
             **{"from": "foo",
                "to": "baar",
-               "amount": "111.110 STEEM",
+               "amount": "111.110 BEX",
                "memo": "Fooo"
                }
         )
@@ -158,7 +158,7 @@ class Testcases(unittest.TestCase):
         op = operations.Transfer_to_vesting(
             **{"from": "foo",
                "to": "baar",
-               "amount": "111.110 STEEM",
+               "amount": "111.110 BEX",
                }
         )
         ops = [operations.Operation(op)]
@@ -182,7 +182,7 @@ class Testcases(unittest.TestCase):
         op = operations.Transfer_to_vesting(
             **{"from": "foo",
                "to": "baar",
-               "amount": "111.110 STEEM",
+               "amount": "111.110 BEX",
                }
         )
         ops = [operations.Operation(op)]
@@ -207,7 +207,7 @@ class Testcases(unittest.TestCase):
             **{
                 "from": "testuser",
                 "to": "testuser",
-                "amount": "1.000 STEEM",
+                "amount": "1.000 BEX",
                 "memo": "testmemo",
             }
         )
@@ -233,7 +233,7 @@ class Testcases(unittest.TestCase):
                 "from": "testuser",
                 "request_id": 9001,
                 "to": "testser",
-                "amount": "100.000 SBD",
+                "amount": "100.000 BBD",
                 "memo": "memohere",
             }
         )
@@ -281,8 +281,8 @@ class Testcases(unittest.TestCase):
         op = operations.Limit_order_create(
             **{"owner": "",
                "orderid": 0,
-               "amount_to_sell": "0.000 STEEM",
-               "min_to_receive": "0.000 STEEM",
+               "amount_to_sell": "0.000 BEX",
+               "min_to_receive": "0.000 BEX",
                "fill_or_kill": False,
                "expiration": "2016-12-31T23:59:59"
                }
@@ -309,23 +309,23 @@ class Testcases(unittest.TestCase):
             **{"account": "streemian",
                "posting": {
                    "weight_threshold": 1,
-                   "account_auths": [["xeroc", 1], ["fabian", 1]],
-                   "key_auths": [["STM6KChDK2sns9MwugxkoRvPEnyjuTxHN5upGsZ1EtanCffqBVVX3", 1],
-                                 ["STM7sw22HqsXbz7D2CmJfmMwt9rimtk518dRzsR1f8Cgw52dQR1pR", 1]]
+                   "account_auths": [["jared", 1], ["stan", 1]],
+                   "key_auths": [["DWB6KChDK2sns9MwugxkoRvPEnyjuTxHN5upGsZ1EtanCffqBVVX3", 1],
+                                 ["DWB7sw22HqsXbz7D2CmJfmMwt9rimtk518dRzsR1f8Cgw52dQR1pR", 1]]
                },
                "owner": {
                    "weight_threshold": 1,
                    "account_auths": [],
-                   "key_auths": [["STM7sw22HqsXbz7D2CmJfmMwt9rimtk518dRzsR1f8Cgw52dQR1pR", 1],
-                                 ["STM6KChDK2sns9MwugxkoRvPEnyjuTxHN5upGsZ1EtanCffqBVVX3", 1]]
+                   "key_auths": [["DWB7sw22HqsXbz7D2CmJfmMwt9rimtk518dRzsR1f8Cgw52dQR1pR", 1],
+                                 ["DWB6KChDK2sns9MwugxkoRvPEnyjuTxHN5upGsZ1EtanCffqBVVX3", 1]]
                },
                "active": {
                    "weight_threshold": 2,
                    "account_auths": [],
-                   "key_auths": [["STM6KChDK2sns9MwugxkoRvPEnyjuTxHN5upGsZ1EtanCffqBVVX3", 1],
-                                 ["STM7sw22HqsXbz7D2CmJfmMwt9rimtk518dRzsR1f8Cgw52dQR1pR", 1]]
+                   "key_auths": [["DWB6KChDK2sns9MwugxkoRvPEnyjuTxHN5upGsZ1EtanCffqBVVX3", 1],
+                                 ["DWB7sw22HqsXbz7D2CmJfmMwt9rimtk518dRzsR1f8Cgw52dQR1pR", 1]]
                },
-               "memo_key": "STM728uLvStTeAkYJsQefks3FX8yfmpFHp8wXw3RY3kwey2JGDooR",
+               "memo_key": "DWB728uLvStTeAkYJsQefks3FX8yfmpFHp8wXw3RY3kwey2JGDooR",
                "json_metadata": ""}
         )
         ops = [operations.Operation(op)]
@@ -379,8 +379,8 @@ class Testcases(unittest.TestCase):
 
     def test_set_route(self):
         op = operations.Set_withdraw_vesting_route(
-            **{"from_account": "xeroc",
-               "to_account": "xeroc",
+            **{"from_account": "jared",
+               "to_account": "jared",
                "percent": 1000,
                "auto_vest": False
                }
@@ -403,9 +403,9 @@ class Testcases(unittest.TestCase):
 
     def test_convert(self):
         op = operations.Convert(
-            **{"owner": "xeroc",
+            **{"owner": "jared",
                "requestid": 2342343235,
-               "amount": "100.000 SBD"}
+               "amount": "100.000 BBD"}
         )
         ops = [operations.Operation(op)]
         tx = Signed_Transaction(
@@ -599,9 +599,9 @@ class Testcases(unittest.TestCase):
 
     def test_feed_publish(self):
         op = operations.Feed_publish(
-            **{"publisher": "xeroc",
-               "exchange_rate": {"base": "1.000 SBD",
-                                 "quote": "4.123 STEEM"}})
+            **{"publisher": "jared",
+               "exchange_rate": {"base": "1.000 BBD",
+                                 "quote": "4.123 BEX"}})
         ops = [operations.Operation(op)]
         tx = Signed_Transaction(
             ref_block_num=ref_block_num,
@@ -620,13 +620,13 @@ class Testcases(unittest.TestCase):
 
     def test_witness_update(self):
         op = operations.Witness_update(
-            **{"owner": "xeroc",
+            **{"owner": "jared",
                "url": "foooobar",
-               "block_signing_key": "STM6zLNtyFVToBsBZDsgMhgjpwysYVbsQD6YhP3kRkQhANUB4w7Qp",
-               "props": {"account_creation_fee": "10.000 STEEM",
+               "block_signing_key": "DWB6zLNtyFVToBsBZDsgMhgjpwysYVbsQD6YhP3kRkQhANUB4w7Qp",
+               "props": {"account_creation_fee": "10.000 BEX",
                          "maximum_block_size": 1111111,
-                         "sbd_interest_rate": 1000},
-               "fee": "10.000 STEEM",
+                         "bbd_interest_rate": 1000},
+               "fee": "10.000 BEX",
                }
         )
         ops = [operations.Operation(op)]
@@ -649,8 +649,8 @@ class Testcases(unittest.TestCase):
 
     def test_witness_vote(self):
         op = operations.Account_witness_vote(
-            **{"account": "xeroc",
-               "witness": "chainsquad",
+            **{"account": "jared",
+               "witness": "Distributed Webs Project",
                "approve": True,
                }
         )
@@ -674,12 +674,12 @@ class Testcases(unittest.TestCase):
         op = operations.Custom_json(
             **{"json": ["reblog",
                         OrderedDict([  # need an ordered dict to keep order for the test
-                            ("account", "xeroc"),
-                            ("author", "chainsquad"),
+                            ("account", "jared"),
+                            ("author", "Distributed Webs Project"),
                             ("permlink", "streemian-com-to-open-its-doors-and-offer-a-20-discount")
                         ])],
                "required_auths": [],
-               "required_posting_auths": ["xeroc"],
+               "required_posting_auths": ["jared"],
                "id": "follow"
                }
         )
@@ -708,10 +708,10 @@ class Testcases(unittest.TestCase):
     def test_comment_options(self):
         op = operations.Comment_options(
             **{
-                "author": "xeroc",
-                "permlink": "piston",
-                "max_accepted_payout": "1000000.000 SBD",
-                "percent_steem_dollars": 10000,
+                "author": "jared",
+                "permlink": "dpaypy",
+                "max_accepted_payout": "1000000.000 BBD",
+                "percent_dpay_dollars": 10000,
                 "allow_votes": True,
                 "allow_curation_rewards": True,
                 "extensions": [
@@ -757,10 +757,10 @@ class Testcases(unittest.TestCase):
         #        self.maxDiff = None
         op = operations.Comment_options(
             **{
-                "author": "xeroc",
-                "permlink": "piston",
-                "max_accepted_payout": "1000000.000 SBD",
-                "percent_steem_dollars": 10000,
+                "author": "jared",
+                "permlink": "dpaypy",
+                "max_accepted_payout": "1000000.000 BBD",
+                "percent_dpay_dollars": 10000,
                 "allow_votes": True,
                 "allow_curation_rewards": True,
                 "extensions": [

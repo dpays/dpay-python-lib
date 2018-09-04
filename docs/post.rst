@@ -1,5 +1,5 @@
 Posts
 ~~~~~
 
-.. autoclass:: piston.post.Post
+.. autoclass:: dpaypy.post.Post
    :members:

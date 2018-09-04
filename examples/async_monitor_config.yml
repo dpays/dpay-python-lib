@@ -6,9 +6,8 @@ witness:
 
    apis:
       db:        database           # The key is the alias used in the code
-      broadcast: network_broadcast  # While the value is the Steem API name
+      broadcast: network_broadcast  # While the value is the dPay API name
 
 wallet: # Only one of witness or wallet must be specified. But both can be also.
    url: ws://localhost:8091/
    # user and password are again optional just like above.
-    

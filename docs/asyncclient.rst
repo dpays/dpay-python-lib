@@ -1,5 +1,5 @@
 *************************
-Asynchronous Steem Client
+Asynchronous dPay Client
 *************************
 
 .. warning:: This is a low level class. Do not use this class unless you
@@ -8,11 +8,11 @@ Asynchronous Steem Client
 Configuration
 #############
 
-.. autoclass:: pistonapi.steemasyncclient.Config
+.. autoclass:: dpaypyapi.dpayasyncclient.Config
     :members:
 
-SteemAsyncClient
+DPayAsyncClient
 ################
 
-.. autoclass:: pistonapi.steemasyncclient.SteemAsyncClient
+.. autoclass:: dpaypyapi.dpayasyncclient.DPayAsyncClient
     :members:

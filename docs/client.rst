@@ -1,5 +1,5 @@
 ***************
-Steem Client
+dPay Client
 ***************
 
 .. warning:: This class is going to be deprecated soon!
@@ -7,11 +7,11 @@ Steem Client
 Configuration
 #############
 
-.. autoclass:: pistonapi.steemclient.ExampleConfig
+.. autoclass:: dpaypyapi.dpayclient.ExampleConfig
     :members:
 
-SteemClient
+DPayClient
 ##############
 
-.. autoclass:: pistonapi.steemclient.SteemClient
+.. autoclass:: dpaypyapi.dpayclient.DPayClient
     :members:

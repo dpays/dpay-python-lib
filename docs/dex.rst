@@ -1,5 +1,5 @@
 Dex
 ~~~
 
-.. autoclass:: piston.dex.Dex
+.. autoclass:: dpaypy.dex.Dex
     :members:

@@ -1,5 +1,5 @@
 Wallet
 ~~~~~~~~~~~~~~~~~~~
 
-.. autoclass:: piston.wallet.Wallet
+.. autoclass:: dpaypy.wallet.Wallet
    :members:

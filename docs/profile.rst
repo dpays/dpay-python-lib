@@ -1,5 +1,5 @@
 Profile
 ~~~~~~~~~
 
-.. autoclass:: piston.profile.Profile
+.. autoclass:: dpaypy.profile.Profile
    :members:

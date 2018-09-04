@@ -1,4 +1,4 @@
-from steem.blockchain import Blockchain
+from dpay.blockchain import Blockchain
 
 # parse the whole chain
 for event in Blockchain().replay():
@@ -17,10 +17,10 @@ for payment in history:
     print("@%s sent %s to @%s" % (payment['from'], payment['amount'], payment['to']))
 
 # Output:
-# @victoriart sent 1.000 SBD to @null
-# @dude sent 5.095 STEEM to @bittrex
-# @devil sent 5.107 STEEM to @poloniex
-# @pinoytravel sent 0.010 SBD to @null
-# @aladdin sent 5.013 STEEM to @poloniex
-# @mrwang sent 31.211 STEEM to @blocktrades
-# @kodi sent 0.030 SBD to @steembingo
+# @victoriart sent 1.000 BBD to @null
+# @dude sent 5.095 BEX to @bittrex
+# @devil sent 5.107 BEX to @poloniex
+# @pinoytravel sent 0.010 BBD to @null
+# @aladdin sent 5.013 BEX to @poloniex
+# @mrwang sent 31.211 BEX to @blocktrades
+# @kodi sent 0.030 BBD to @dpaybingo

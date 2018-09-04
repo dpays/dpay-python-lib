@@ -1,5 +1,5 @@
 Converter
 ~~~~~~~~~
 
-.. autoclass:: piston.converter.Converter
+.. autoclass:: dpaypy.converter.Converter
    :members:

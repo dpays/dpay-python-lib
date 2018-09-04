@@ -1,23 +1,23 @@
-Welcome to piston-lib's documentation!
+Welcome to dpay-lib's documentation!
 ===============================================
 
-Piston is a tool to interact with the STEEM network using Python 3 and
-piston-lib.
+dPayPY is a tool to interact with the dPay network using Python 3 and
+dpay-lib.
 
-* **piston-cli's** home is `github.com/xeroc/piston-cli <https://github.com/xeroc/piston-cli>`_
-* **piston-lib's** home is `github.com/xeroc/piston-lib <https://github.com/xeroc/piston-lib>`_
+* **dpay-cli's** home is `github.com/dpays/dpay-cli <https://github.com/dpays/dpay-cli>`_
+* **dpay-lib's** home is `github.com/dpays/dpay-python-lib <https://github.com/dpays/dpay-python-lib>`_
 
 Library
 -------
 
-The ``piston``-library can be used to interface with the STEEM
+The ``dpaypy``-library can be used to interface with the dPay
 blockchain. It comes with
 
 * it's own wallet,
 * a configuration database
 * default settings that enable to get started right away
 
-We recommend to also install `piston-cli <http://cli.piston.rocks>`_
+We recommend to also install `dpay-cli <http://docs.dpays.io/cli>`_
 which is an easy to use command line tools to use many of the features
 of this library.
 
@@ -33,13 +33,13 @@ Getting Started
    contribute
 
 
-Piston-lib's Modules
+dpay-lib's Modules
 ----------------------
 
 .. toctree::
    :maxdepth: 3
 
-   steem
+   dpay
    account
    block
    blockchain

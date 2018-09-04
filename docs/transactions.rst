@@ -16,7 +16,7 @@ We load the class for manual transaction construction via:
 
 .. code-block:: python
 
-    from pistonbase import transactions
+    from dpaypybase import transactions
 
 Construction
 ############

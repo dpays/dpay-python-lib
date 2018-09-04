@@ -5,18 +5,18 @@ To build your own transactions and sign them
 
 .. code-block:: python
 
-   from piston.transactionbuilder import TransactionBuilder
-   from pistonbase.operations import Vote
+   from dpaypy.transactionbuilder import TransactionBuilder
+   from dpaypybase.operations import Vote
    tx = TransactionBuilder()
    tx.appendOps(Vote(
        **{"voter": voter,
           "author": post_author,
           "permlink": post_permlink,
-          "weight": int(weight * STEEMIT_1_PERCENT)}  # STEEMIT_1_PERCENT = 100
+          "weight": int(weight * DPAY_1_PERCENT)}  # DPAY_1_PERCENT = 100
    ))
-   tx.appendSigner("xeroc", "posting")
+   tx.appendSigner("jared", "posting")
    tx.sign()
    tx.broadcast()
 
-.. autoclass:: piston.transactionbuilder.TransactionBuilder
+.. autoclass:: dpaypy.transactionbuilder.TransactionBuilder
    :members:

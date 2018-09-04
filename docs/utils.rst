@@ -1,5 +1,5 @@
 Utilities
 ~~~~~~~~~~~~~~~~~~~
 
-.. autoclass:: piston.utils
+.. autoclass:: dpaypy.utils
    :members:

@@ -5,11 +5,11 @@ Obtaining data of an account.
 
 .. code-block:: python
 
-   from piston.account import Account
-   account = Account("xeroc")
+   from dpaypy.account import Account
+   account = Account("jared")
    print(account)
    print(account.reputation())
    print(account.balances)
 
-.. autoclass:: piston.account.Account
+.. autoclass:: dpaypy.account.Account
    :members:

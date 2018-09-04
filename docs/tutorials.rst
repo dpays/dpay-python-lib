@@ -9,11 +9,11 @@ The most easy auto-reply bot can be coded with just a few lines of code:
 
 .. code-block:: python
 
-   from piston import Steem
+   from dpaypy import DPay
    import os
    import json
-   steem = Steem(wif="<posting-key-for-default-author>")
-   for c in steem.stream_comments():
+   dpay = DPay(wif="<posting-key-for-default-author>")
+   for c in dpay.stream_comments():
        if "Boobie" in c["body"]:
            print(c.reply(".. doobidoo"))
 
@@ -26,7 +26,7 @@ This example code shows all comments starting at block 1893850.
 
 .. code-block:: python
 
-   from piston.blockchain import Blockchain
+   from dpaypy.blockchain import Blockchain
    from pprint import pprint
 
    for a in blockchain.blocks():
@@ -37,7 +37,7 @@ Operation Stream
 
 .. code-block:: python
 
-   from piston.blockchain import Blockchain
+   from dpaypy.blockchain import Blockchain
    from pprint import pprint
 
    for a in blockchain.ops():
@@ -49,13 +49,13 @@ Decentralized Exchange
 .. code-block:: python
 
     from pprint import pprint
-    from piston import Steem
-    from piston.dex import Dex
+    from dpaypy import DPay
+    from dpaypy.dex import Dex
 
-    steem = Steem()
-    dex = Dex(steem)
-    pprint(dex.buy(10, "SBD", 100))
-    pprint(dex.sell(10, "SBD", 100))
+    dpay = DPay()
+    dex = Dex(dpay)
+    pprint(dex.buy(10, "BBD", 100))
+    pprint(dex.sell(10, "BBD", 100))
     pprint(dex.cancel("24432422"))
     pprint(dex.returnTicker())
     pprint(dex.return24Volume())
@@ -66,4 +66,4 @@ Decentralized Exchange
     pprint(dex.returnMarketHistory(300))
     pprint(dex.get_lowest_ask())
     pprint(dex.get_higest_bid())
-    pprint(dex.transfer(10, "SBD", "fabian", "foobar"))
+    pprint(dex.transfer(10, "BBD", "stan", "foobar"))

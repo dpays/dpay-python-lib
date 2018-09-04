@@ -5,8 +5,8 @@ Read data about a witness
 
 .. code-block:: python
 
-   from piston.witness import Witness
+   from dpaypy.witness import Witness
    Witness("chainsquad.com")
 
-.. autoclass:: piston.witness.Witness
+.. autoclass:: dpaypy.witness.Witness
    :members:

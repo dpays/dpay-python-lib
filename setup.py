@@ -34,7 +34,7 @@ setup(
         'Topic :: Office/Business :: Financial',
     ],
     install_requires=[
-        "graphenelib>=0.5.3",
+        "dpay-graphenelib>=0.1.1",
         "websockets>=2.0",
         "scrypt>=0.7.1",
         "diff-match-patch>=20121119",

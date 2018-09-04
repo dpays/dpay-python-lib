@@ -10,7 +10,7 @@ Install with `pip`:
 ::
 
     $ sudo apt-get install libffi-dev libssl-dev python-dev
-    $ pip3 install dpay-lib dpay-cli
+    $ pip3 install dpay-lib dpaycli
 
 Manual installation:
 

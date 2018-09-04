@@ -4,7 +4,7 @@ Welcome to dpay-lib's documentation!
 dPayPY is a tool to interact with the dPay network using Python 3 and
 dpay-lib.
 
-* **dpay-cli's** home is `github.com/dpays/dpay-cli <https://github.com/dpays/dpay-cli>`_
+* **dpaycli's** home is `github.com/dpays/dpaycli <https://github.com/dpays/dpaycli>`_
 * **dpay-lib's** home is `github.com/dpays/dpay-python-lib <https://github.com/dpays/dpay-python-lib>`_
 
 Library
@@ -17,7 +17,7 @@ blockchain. It comes with
 * a configuration database
 * default settings that enable to get started right away
 
-We recommend to also install `dpay-cli <http://docs.dpays.io/cli>`_
+We recommend to also install `dpaycli <http://docs.dpays.io/cli>`_
 which is an easy to use command line tools to use many of the features
 of this library.
 

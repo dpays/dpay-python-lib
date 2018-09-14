@@ -9,7 +9,7 @@ except LookupError:
     ascii = codecs.lookup('ascii')
     codecs.register(lambda name, enc=ascii: {True: enc}.get(name == 'mbcs'))
 
-VERSION = '0.1.1'
+VERSION = '0.1.5'
 
 setup(
     name='dpay-lib',
@@ -21,7 +21,7 @@ setup(
     author_email='jared@benchx.io',
     maintainer='Jared Rice Sr.',
     maintainer_email='jared@benchx.io',
-    url='http://docs.dpays.io',
+    url='http://library.dpays.io/dpay-python-lib',
     keywords=['dpay', 'library', 'api', 'rpc', 'transactions'],
     packages=["dpaypy", "dpaypyapi", "dpaypybase"],
     classifiers=[
@@ -34,7 +34,7 @@ setup(
         'Topic :: Office/Business :: Financial',
     ],
     install_requires=[
-        "dpay-graphenelib>=0.1.1",
+        "dpay-graphenelib>=0.1.2",
         "websockets>=2.0",
         "scrypt>=0.7.1",
         "diff-match-patch>=20121119",

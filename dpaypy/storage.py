@@ -258,7 +258,7 @@ class Configuration(DataDir):
         "format": "markdown",
         "limit": 10,
         "list_sorting": "trending",
-        "node": "wss://dpayd.dpays.io,wss://greatchain.dpays.io,wss://freedomfirst.dsite.io",
+        "node": "wss://dpayd.dpays.io,wss://dpayd.dpays.io,wss://d.dsite.io",
         "post_category": "dpay",
         "rpcpassword": "",
         "rpcuser": "",

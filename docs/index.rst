@@ -17,7 +17,7 @@ blockchain. It comes with
 * a configuration database
 * default settings that enable to get started right away
 
-We recommend to also install `dpaycli <http://docs.dpays.io/cli>`_
+We recommend to also install `dpaycli <http://library.dpays.io/dpaycli>`_
 which is an easy to use command line tools to use many of the features
 of this library.
 

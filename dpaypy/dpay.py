@@ -216,7 +216,7 @@ class DPay(object):
             It is only relevant if we are not on BEX, but e.g. on
             GOLOS
         """
-        assert asset.lower() in ["bbd", "bex", "vests"]
+        assert asset.lower() in ["bbd", "dpay", "vests"]
         return self.rpc.chain_params["%s_symbol" % asset.lower()]
 
     def info(self):
@@ -656,7 +656,7 @@ class DPay(object):
         if not account:
             raise ValueError("You need to provide an account")
 
-        assert asset == self.symbol("BBD") or asset == self.symbol("bex")
+        assert asset == self.symbol("BBD") or asset == self.symbol("dpay")
 
         if memo and memo[0] == "#":
             from dpaypybase import memo as Memo
@@ -732,7 +732,7 @@ class DPay(object):
                "amount": '{:.{prec}f} {asset}'.format(
                    float(amount),
                    prec=3,
-                   asset=self.symbol("bex"))
+                   asset=self.symbol("dpay"))
                }
         )
 
@@ -877,7 +877,7 @@ class DPay(object):
                 "publisher": account,
                 "exchange_rate": {
                     "base": "%s %s" % (dpay_usd_price, self.symbol("BBD")),
-                    "quote": "%s %s" % (quote, self.symbol("bex")),
+                    "quote": "%s %s" % (quote, self.symbol("dpay")),
                 }
             }
         )
@@ -917,7 +917,7 @@ class DPay(object):
                 "url": url,
                 "block_signing_key": signing_key,
                 "props": props,
-                "fee": "0.000 %s" % self.symbol("bex"),
+                "fee": "0.000 %s" % self.symbol("dpay"),
                 "prefix": self.rpc.chain_params["prefix"]
             }
         )

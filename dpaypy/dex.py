@@ -120,16 +120,16 @@ class Dex(object):
 
                 {'asks': [{'price': 3.086436224481787,
                            'bbd': 318547,
-                           'bex': 983175},
+                           'dpay': 983175},
                           {'price': 3.086429621198315,
                            'bbd': 2814903,
-                           'bex': 8688000}],
+                           'dpay': 8688000}],
                  'bids': [{'price': 3.0864376216446257,
                            'bbd': 545133,
-                           'bex': 1682519},
+                           'dpay': 1682519},
                           {'price': 3.086440512632327,
                            'bbd': 333902,
-                           'bex': 1030568}]},
+                           'dpay': 1030568}]},
         """
         orders = self.dpay.rpc.get_order_book(limit, api="market_history")
         r = {"asks": [], "bids": []}
@@ -138,7 +138,7 @@ class Dex(object):
                 r[side].append({
                     'price': float(o["price"]),
                     'bbd': o["bbd"] / 10 ** 3,
-                    'bex': o["bex"] / 10 ** 3,
+                    'dpay': o["dpay"] / 10 ** 3,
                 })
         return r
 
@@ -341,7 +341,7 @@ class Dex(object):
 
                  {'price': '0.32399833185738391',
                    'bbd': 320863,
-                   'bex': 990323}
+                   'dpay': 990323}
         """
         orders = self.returnOrderBook(1)
         return orders["asks"][0]
@@ -359,7 +359,7 @@ class Dex(object):
 
                  {'price': '0.32399833185738391',
                   'bbd': 320863,
-                  'bex': 990323}
+                  'dpay': 990323}
         """
         orders = self.returnOrderBook(1)
         return orders["bids"][0]

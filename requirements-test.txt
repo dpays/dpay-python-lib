@@ -1,4 +1,4 @@
-graphenelib
+dpay-graphenelib
 pyyaml
 pytest
 coverage

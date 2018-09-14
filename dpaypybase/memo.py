@@ -7,7 +7,7 @@ from graphenebase.base58 import base58encode, base58decode
 import struct
 
 " This class and the methods require python3 "
-assert sys.version_info[0] == 3, "graphenelib requires python3"
+assert sys.version_info[0] == 3, "dpay-graphenelib requires python3"
 
 default_prefix = "DWB"
 
